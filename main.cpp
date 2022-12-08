@@ -205,17 +205,11 @@ void third_test()
 	freeVm(mainVm);
 }
 
-void fourth_test()
+int main() 
 {
-	vm* mainVm = newVm();
-	pushInt(mainVm, 1);
-	pushInt(mainVm, 2);
-	pushTwin(mainVm);
-	pushInt(mainVm, 3);
-	pushInt(mainVm, 4);
-	pushTwin(mainVm);
-	pushTwin(mainVm);
-
-	gc(mainVm);
-	freeVm(mainVm);
+	first_test();
+	second_test();
+	third_test();
+	
+	return 0;
 }
